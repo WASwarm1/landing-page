@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - ChambaPro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header with solid background (fixed position) -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">Chamba<span>Pro</span></a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="about.html" class="active" data-i18n="nav.about">About Us</a></li>
+          <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Our Team</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="technicians.html" data-i18n="nav.technicians">For Technicians</a></li>
+        </ul>
+        <button id="languageToggle" class="language-toggle">
+          <span class="language-flag">🇺🇸</span>
+          <span class="language-text" data-i18n="language.english">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Main content (scrolls normally) -->
+<main>
+  <!-- Hero Section for About Us -->
+  <section class="hero about-hero">
+    <div class="container">
+      <h1 data-i18n="about.hero.title">Our Story</h1>
+      <p data-i18n="about.hero.subtitle">Connecting homeowners with trusted professionals since 2025</p>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="our-story">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-text">
+          <h2 data-i18n="about.story.title">How ChambaPro Began</h2>
+          <p data-i18n="about.story.text1">Founded in 2025 by a group of 5 students, ChambaPro emerged from a simple observation: finding reliable home service professionals was often frustrating and time-consuming for homeowners, while skilled technicians struggled to connect with quality clients.</p>
+          <p data-i18n="about.story.text2">That's when the vision for ChambaPro was born - a platform that would simplify the process for homeowners while providing technicians with a steady stream of quality work opportunities.</p>
+        </div>
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1300&q=80" alt="Team meeting" style="width: 100%; border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values Section -->
+  <section class="mission-values">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="about.mission.title">Our Mission & Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 data-i18n="about.values.trust.title">Trust</h3>
+          <p data-i18n="about.values.trust.text">We verify all technicians through rigorous background checks and credential verification to ensure peace of mind for our customers.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3 data-i18n="about.values.quality.title">Quality</h3>
+          <p data-i18n="about.values.quality.text">We maintain high standards for all services provided through our platform, with customer satisfaction as our top priority.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 data-i18n="about.values.innovation.title">Innovation</h3>
+          <p data-i18n="about.values.innovation.text">We continuously improve our platform to make the process of finding and hiring home service professionals seamless and efficient.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 data-i18n="about.values.community.title">Community</h3>
+          <p data-i18n="about.values.community.text">We believe in building strong relationships between homeowners and technicians, creating a network of trust and reliability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label" data-i18n="about.stats.technicians">Verified Technicians</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="10000">0</div>
+          <div class="stat-label" data-i18n="about.stats.projects">Completed Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="95">0</div>
+          <div class="stat-label" data-i18n="about.stats.satisfaction">% Customer Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label" data-i18n="about.stats.cities">Cities Served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Preview Section -->
+  <section class="team-preview">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="about.team.title">Meet Our Leadership Team</h2>
+        <p data-i18n="about.team.subtitle">The passionate individuals driving our mission forward</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="assets/img/Perfil_Armestar_Heredia.jpeg" height="296" width="255" alt="Armestar Heredia"/>
+          <h3>Armestar Heredia</h3>
+        </div>
+        <div class="team-member">
+          <img src="assets/img/Perfil_Emilia_Duran.jpeg" height="420" width="420" alt="Emilia Duran"/>
+          <h3>Emilia Duran</h3>
+        </div>
+        <div class="team-member">
+          <img src="assets/img/Perfil_Jorge_Taipe.png" height="333" width="265" alt="Jorge Taipe"/>
+          <h3>Jorge Taipe</h3>
+        </div>
+        <div class="team-member">
+          <img src="assets/img/Perfil_Saul_Ortega.JPEG" height="98" width="73" alt="Saul Ortega"/>
+          <h3>Saul Ortega</h3>
+        </div>
+        <div class="team-member">
+          <img src="assets/img/Perfil_Werner_Lang.jpg" height="278" width="255" alt="Werner Lang"/>
+          <h3>Werner Lang</h3>
+        </div>
+      </div>
+      <div class="team-cta">
+        <a href="index.html#team" class="btn" data-i18n="about.team.ctaButton">View Full Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="about-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 data-i18n="about.cta.title">Ready to Experience the ChambaPro Difference?</h2>
+        <p data-i18n="about.cta.subtitle">Join thousands of satisfied homeowners who have transformed their home maintenance experience</p>
+        <div class="cta-buttons">
+          <a href="index.html#contact" class="btn" data-i18n="about.cta.button1">Find a Technician</a>
+          <a href="technicians.html" class="btn btn-secondary" data-i18n="about.cta.button2">Become a Technician</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3 data-i18n="footer.about">About Us</h3>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.story">Our Story</a></li>
+          <li><a href="#" data-i18n="footer.howItWorks">How It Works</a></li>
+          <li><a href="#" data-i18n="footer.team">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 data-i18n="footer.services">Services</h3>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.plumbing">Plumbing</a></li>
+          <li><a href="#" data-i18n="footer.electrical">Electrical</a></li>
+          <li><a href="#" data-i18n="footer.carpentry">Carpentry</a></li>
+          <li><a href="#" data-i18n="footer.painting">Painting</a></li>
+          <li><a href="#" data-i18n="footer.repairs">General Repairs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.support">Support</a></li>
+          <li><a href="#" data-i18n="footer.help">Help Center</a></li>
+          <li><a href="#" data-i18n="footer.faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 data-i18n="footer.terms">Terms of Service</h3>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="#" data-i18n="footer.termsUse">Terms of Use</a></li>
+          <li><a href="#" data-i18n="footer.guarantee">Guarantee</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 ChambaPro. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="Script.js"></script>
+</body>
+</html>
