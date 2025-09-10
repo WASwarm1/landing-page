@@ -1135,3 +1135,129 @@ footer {
         justify-content: center;
     }
 }
+
+/* Terms Page Specific Styles */
+.terms-hero {
+    background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+}
+
+.terms-nav {
+    padding: 30px 0;
+    background-color: var(--light);
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.terms-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.term-tab {
+    padding: 12px 24px;
+    background: var(--white);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 1px solid var(--secondary);
+}
+
+.term-tab:hover,
+.term-tab.active {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.terms-section {
+    padding: 80px 0;
+    display: none;
+}
+
+.terms-section.active {
+    display: block;
+}
+
+.terms-content h2 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.last-updated {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.terms-text h3 {
+    color: var(--primary);
+    margin: 30px 0 15px;
+    font-size: 1.4rem;
+}
+
+.terms-text p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.terms-text ul {
+    color: #666;
+    line-height: 1.7;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.terms-text li {
+    margin-bottom: 10px;
+}
+
+.terms-contact {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a9c96 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.terms-contact h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.terms-contact p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design for Terms Page */
+@media (max-width: 768px) {
+    .terms-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .term-tab {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .terms-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .terms-text h3 {
+        font-size: 1.2rem;
+    }
+}

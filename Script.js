@@ -622,4 +622,63 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.stats-section')) {
         setTimeout(animateCounters, 500);
     }
+
+    // Initialize terms tabs if on terms page
+    if (document.querySelector('.terms-tabs')) {
+        initTermsTabs();
+    }
 });
+
+function initTermsTabs() {
+    const tabs = document.querySelectorAll('.term-tab');
+    const sections = document.querySelectorAll('.terms-section');
+
+    if (tabs.length > 0 && sections.length > 0) {
+        const hash = window.location.hash;
+        let activeTab = null;
+
+        if (hash) {
+            activeTab = document.querySelector(`.term-tab[href="${hash}"]`);
+        }
+
+        if (!activeTab) {
+            activeTab = tabs[0];
+            window.location.hash = activeTab.getAttribute('href');
+        }
+
+        // Activate tab and section based on hash
+        function activateTab(tab) {
+            tabs.forEach(t => t.classList.remove('active'));
+            sections.forEach(s => s.classList.remove('active'));
+
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            // Show corresponding section
+            const targetId = tab.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        }
+
+        activateTab(activeTab);
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                window.location.hash = targetId;
+                activateTab(this);
+            });
+        });
+
+        window.addEventListener('hashchange', function() {
+            const hash = window.location.hash;
+            const tab = document.querySelector(`.term-tab[href="${hash}"]`);
+            if (tab) {
+                activateTab(tab);
+            }
+        });
+    }
+}
