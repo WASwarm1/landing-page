@@ -56,11 +56,43 @@ const translations = {
         "footer.cookie": "Cookie Policy",
         "footer.guarantee": "Guarantee",
         "footer.rights": "All rights reserved.",
+        "footer.press": "Press",
 
         // CTA Section
         "cta.technicians.title": "Are You a Technician?",
         "cta.technicians.subtitle": "Join our network of professionals and grow your business with ChambaPro",
         "cta.technicians.button": "Learn More",
+
+        // About page translations
+        "about.hero.title": "Our Story",
+        "about.hero.subtitle": "Connecting homeowners with trusted professionals since 2025",
+
+        "about.story.title": "How ChambaPro Began",
+        "about.story.text1": "Founded in 2025 by a group of 5 students, ChambaPro emerged from a simple observation: finding reliable home service professionals was often frustrating and time-consuming for homeowners, while skilled technicians struggled to connect with quality clients.",
+        "about.story.text2": "That's when the vision for ChambaPro was born - a platform that would simplify the process for homeowners while providing technicians with a steady stream of quality work opportunities.",
+
+        "about.mission.title": "Our Mission & Values",
+        "about.values.trust.title": "Trust",
+        "about.values.trust.text": "We verify all technicians through rigorous background checks and credential verification to ensure peace of mind for our customers.",
+        "about.values.quality.title": "Quality",
+        "about.values.quality.text": "We maintain high standards for all services provided through our platform, with customer satisfaction as our top priority.",
+        "about.values.innovation.title": "Innovation",
+        "about.values.innovation.text": "We continuously improve our platform to make the process of finding and hiring home service professionals seamless and efficient.",
+        "about.values.community.title": "Community",
+        "about.values.community.text": "We believe in building strong relationships between homeowners and technicians, creating a network of trust and reliability.",
+
+        "about.stats.technicians": "Verified Technicians",
+        "about.stats.projects": "Completed Projects",
+        "about.stats.satisfaction": "% Customer Satisfaction",
+        "about.stats.cities": "Cities Served",
+
+        "about.team.title": "Meet Our Founding Team",
+        "about.team.subtitle": "The passionate students who brought ChambaPro to life",
+
+        "about.cta.title": "Ready to Experience the ChambaPro Difference?",
+        "about.cta.subtitle": "Join our growing community of satisfied homeowners and skilled technicians",
+        "about.cta.button1": "Find a Technician",
+        "about.cta.button2": "Become a Technician",
 
         // Technician page translations
         "technicians.hero.title": "Join Our Network of Expert Technicians",
@@ -177,11 +209,43 @@ const translations = {
         "footer.cookie": "Política de Cookies",
         "footer.guarantee": "Garantía",
         "footer.rights": "Todos los derechos reservados.",
+        "footer.press": "Prensa",
 
         // CTA Section
         "cta.technicians.title": "¿Eres Técnico?",
         "cta.technicians.subtitle": "Únete a nuestra red de profesionales y haz crecer tu negocio con ChambaPro",
         "cta.technicians.button": "Conoce Más",
+
+        // About page translations
+        "about.hero.title": "Nuestra Historia",
+        "about.hero.subtitle": "Conectando propietarios con profesionales de confianza desde 2025",
+
+        "about.story.title": "Cómo Comenzó ChambaPro",
+        "about.story.text1": "Fundada en 2025 por un grupo de 5 estudiantes, ChambaPro surgió de una simple observación: encontrar profesionales de servicios para el hogar confiables era a menudo frustrante y requería mucho tiempo para los propietarios, mientras que los técnicos calificados luchaban por conectarse con clientes de calidad.",
+        "about.story.text2": "Fue entonces cuando nació la visión de ChambaPro: una plataforma que simplificaría el proceso para los propietarios de viviendas mientras brinda a los técnicos un flujo constante de oportunidades de trabajo de calidad.",
+
+        "about.mission.title": "Nuestra Misión y Valores",
+        "about.values.trust.title": "Confianza",
+        "about.values.trust.text": "Verificamos todos los técnicos mediante rigurosas verificaciones de antecedentes y credenciales para garantizar la tranquilidad de nuestros clientes.",
+        "about.values.quality.title": "Calidad",
+        "about.values.quality.text": "Mantenemos altos estándares para todos los servicios proporcionados a través de nuestra plataforma, con la satisfacción del cliente como nuestra principal prioridad.",
+        "about.values.innovation.title": "Innovación",
+        "about.values.innovation.text": "Mejoramos continuamente nuestra plataforma para que el proceso de encontrar y contratar profesionales de servicios para el hogar sea perfecto y eficiente.",
+        "about.values.community.title": "Comunidad",
+        "about.values.community.text": "Creemos en construir relaciones sólidas entre propietarios y técnicos, creando una red de confianza y confiabilidad.",
+
+        "about.stats.technicians": "Técnicos Verificados",
+        "about.stats.projects": "Proyectos Completados",
+        "about.stats.satisfaction": "% Satisfacción del Cliente",
+        "about.stats.cities": "Ciudades Atendidas",
+
+        "about.team.title": "Conoce Nuestro Equipo Fundador",
+        "about.team.subtitle": "Los estudiantes apasionados que dieron vida a ChambaPro",
+
+        "about.cta.title": "¿Listo para Experimentar la Diferencia ChambaPro?",
+        "about.cta.subtitle": "Únete a nuestra creciente comunidad de propietarios satisfechos y técnicos calificados",
+        "about.cta.button1": "Encontrar un Técnico",
+        "about.cta.button2": "Convertirse en Técnico",
 
         // Technician page translations
         "technicians.hero.title": "Únete a Nuestra Red de Técnicos Expertos",
@@ -220,7 +284,7 @@ const translations = {
         "technicians.testimonials.card1.role": "Electricista",
         "technicians.testimonials.card2.text": "\"La flexibilidad de horarios me permite balancear mi trabajo y mi familia. Además, el soporte al técnico es excelente.\"",
         "technicians.testimonials.card2.role": "Plomera",
-        "technicians.testimonials.card3.text": "\"Las herramientas de gestión me ahorran horas de administración. Now I can focus on what I do best: repair.\"",
+        "technicians.testimonials.card3.text": "\"Las herramientas de gestión me ahorran horas de administración. Ahora me puedo concentrar en lo que mejor hago: reparar.\"",
         "technicians.testimonials.card3.role": "Técnico en Refrigeración",
 
         "technicians.apply.title": "¿Listo para Unirte a Nuestra Comunidad?",
@@ -377,6 +441,24 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Add counter animation for stats
+function animateCounters() {
+    const counters = document.querySelectorAll('.stat-number');
+    const speed = 200;
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-count');
+        const count = +counter.innerText;
+        const increment = Math.ceil(target / speed);
+
+        if (count < target) {
+            counter.innerText = Math.min(count + increment, target);
+            setTimeout(() => animateCounters(), 1);
+        }
+    });
+}
+
+// Form submission handler
 document.addEventListener('DOMContentLoaded', function() {
     // Check for saved language preference
     const savedLanguage = localStorage.getItem('chambapro-language');
@@ -384,11 +466,13 @@ document.addEventListener('DOMContentLoaded', function() {
         changeLanguage(savedLanguage);
     }
 
-    const elementsToAnimate = document.querySelectorAll('.team-member, .benefit-card, .mission-content, .step, .testimonial-card');
+    // Observe elements for animation
+    const elementsToAnimate = document.querySelectorAll('.team-member, .benefit-card, .mission-content, .step, .testimonial-card, .value-card');
     elementsToAnimate.forEach(el => {
         observer.observe(el);
     });
 
+    // Translate form placeholders on page load
     translateFormPlaceholders();
 
     // Handle technician form submission
@@ -415,6 +499,13 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         } else if (currentPage === 'technicians.html' && linkPage === 'technicians.html') {
             link.classList.add('active');
+        } else if (currentPage === 'about.html' && linkPage === 'about.html') {
+            link.classList.add('active');
         }
     });
+
+    // Animate counters if on about page
+    if (document.querySelector('.stats-section')) {
+        setTimeout(animateCounters, 500);
+    }
 });
