@@ -257,6 +257,9 @@ function changeLanguage(lang) {
         }
     });
 
+    // Update form placeholders
+    translateFormPlaceholders();
+
     // Update language toggle button
     const languageToggle = document.getElementById('languageToggle');
     const languageFlag = languageToggle.querySelector('.language-flag');
@@ -276,6 +279,39 @@ function changeLanguage(lang) {
     document.documentElement.lang = lang;
 }
 
+// Add form placeholder translation function
+function translateFormPlaceholders() {
+    document.querySelectorAll('[data-i18n-ph]').forEach(element => {
+        const key = element.getAttribute('data-i18n-ph');
+        if (translations[currentLanguage].technicians && translations[currentLanguage].technicians[key]) {
+            element.placeholder = translations[currentLanguage].technicians[key];
+        }
+    });
+
+    // Translate select options
+    const specialtySelect = document.querySelector('select');
+    if (specialtySelect) {
+        const options = specialtySelect.querySelectorAll('option');
+        options.forEach(option => {
+            if (option.hasAttribute('data-i18n')) {
+                const key = option.getAttribute('data-i18n');
+                if (translations[currentLanguage].technicians && translations[currentLanguage].technicians[key]) {
+                    option.textContent = translations[currentLanguage].technicians[key];
+                }
+            }
+        });
+
+        // Update the default option text
+        const defaultOption = specialtySelect.querySelector('option[disabled]');
+        if (defaultOption && defaultOption.hasAttribute('data-i18n')) {
+            const key = defaultOption.getAttribute('data-i18n');
+            if (translations[currentLanguage].technicians && translations[currentLanguage].technicians[key]) {
+                defaultOption.textContent = translations[currentLanguage].technicians[key];
+            }
+        }
+    }
+}
+
 // Language toggle functionality
 document.getElementById('languageToggle').addEventListener('click', () => {
     const newLanguage = currentLanguage === 'en' ? 'es' : 'en';
@@ -285,68 +321,100 @@ document.getElementById('languageToggle').addEventListener('click', () => {
     localStorage.setItem('chambapro-language', newLanguage);
 });
 
-// Check for saved language preference
-document.addEventListener('DOMContentLoaded', () => {
+// Mobile menu toggle functionality
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks) {
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Calculate position accounting for fixed header
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Add animation when elements come into view
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for saved language preference
     const savedLanguage = localStorage.getItem('chambapro-language');
     if (savedLanguage) {
         changeLanguage(savedLanguage);
     }
 
-    // Mobile menu toggle functionality
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                // Calculate position accounting for fixed header
-                const headerHeight = document.querySelector('header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Add animation when elements come into view
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-
-    // Observe elements for animation
-    const elementsToAnimate = document.querySelectorAll('.team-member, .benefit-card, .mission-content');
+    const elementsToAnimate = document.querySelectorAll('.team-member, .benefit-card, .mission-content, .step, .testimonial-card');
     elementsToAnimate.forEach(el => {
         observer.observe(el);
+    });
+
+    translateFormPlaceholders();
+
+    // Handle technician form submission
+    const technicianForm = document.getElementById('technicianForm');
+    if (technicianForm) {
+        technicianForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert(currentLanguage === 'es' ?
+                '¡Gracias por tu interés! Nos pondremos en contacto contigo pronto.' :
+                'Thank you for your interest! We will contact you soon.');
+            technicianForm.reset();
+        });
+    }
+
+    // Set active navigation link based on current page
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if ((currentPage === 'index.html' || currentPage === '') && linkPage === '#') {
+            link.classList.add('active');
+        } else if (linkPage === currentPage) {
+            link.classList.add('active');
+        } else if (currentPage === 'technicians.html' && linkPage === 'technicians.html') {
+            link.classList.add('active');
+        }
     });
 });
