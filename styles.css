@@ -55,7 +55,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: var(--text);
+    color: var(--dark);
     text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ nav {
     font-weight: 500;
 }
 
-/* Hero Section with image background - NOT STICKY */
+/* Hero Section with image background */
 .hero {
     background: linear-gradient(rgba(46, 46, 46, 0.7), rgba(46, 46, 46, 0.7)),
     url('https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
@@ -119,7 +119,7 @@ nav {
     color: var(--white);
     padding: 150px 0 100px;
     text-align: center;
-    margin-top: 80px; /* Push hero down to account for fixed header */
+    margin-top: 80px;
 }
 
 .hero h1 {
@@ -187,7 +187,7 @@ section {
 .section-title h2::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 70px;
@@ -283,6 +283,37 @@ section {
 
 .benefit-card p {
     color: #666;
+}
+
+/* Technician CTA Section */
+.technician-cta {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.cta-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cta-text h2 {
+    color: var(--dark);
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.cta-text p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.cta-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -409,5 +440,312 @@ footer {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .cta-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .cta-text {
+        order: 2;
+    }
+
+    .cta-image {
+        order: 1;
+    }
+}
+
+/* Technician-specific styles */
+.technician-hero {
+    background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+}
+
+.technician-benefits {
+    background-color: var(--white);
+}
+
+.technician-benefits .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.technician-benefits .benefit-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid var(--light);
+}
+
+.technician-benefits .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(32, 178, 170, 0.15);
+}
+
+.technician-benefits .benefit-icon {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.technician-benefits .benefit-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-size: 1.4rem;
+}
+
+.technician-benefits .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: var(--light);
+    padding: 80px 0;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.step p {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: var(--dark);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.testimonial-content p::before {
+    content: "“";
+    font-size: 3rem;
+    color: var(--primary);
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    opacity: 0.3;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    margin: 0;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.author-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Apply Section */
+.apply-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a9c96 100%);
+    color: var(--white);
+}
+
+.apply-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.apply-text h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.apply-text p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.apply-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.apply-text li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.apply-text li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.apply-form {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.apply-form h3 {
+    color: var(--dark);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.apply-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Active navigation link */
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Responsive Design for Technician Page */
+@media (max-width: 968px) {
+    .apply-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .apply-text {
+        text-align: center;
+    }
+
+    .apply-text ul {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .technician-benefits .benefits-grid,
+    .steps-container,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technician-benefits .benefit-card,
+    .step,
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .apply-form {
+        padding: 30px 20px;
     }
 }

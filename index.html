@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<!-- Header with solid background  -->
+<!-- Header with solid background (fixed position) -->
 <header>
     <div class="container">
         <nav>
@@ -19,6 +19,7 @@
                     <li><a href="#services" data-i18n="nav.services">Services</a></li>
                     <li><a href="#team" data-i18n="nav.team">Our Team</a></li>
                     <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="technicians.html" data-i18n="nav.technicians">For Technicians</a></li>
                 </ul>
                 <button id="languageToggle" class="language-toggle">
                     <span class="language-flag">🇺🇸</span>
@@ -32,14 +33,14 @@
     </div>
 </header>
 
-<!-- Main content  -->
+<!-- Main content (scrolls normally) -->
 <main>
     <!-- Hero Section with image background -->
     <section class="hero">
         <div class="container">
             <h1 data-i18n="hero.title">Find the Right Technician for Your Home Needs</h1>
             <p data-i18n="hero.subtitle">One man who has a good understanding, for all your home maintenance and labor service requirements.</p>
-            <a href="#contact" class="btn" data-i18n="hero.button">Get Started</a>
+            <a href="#" class="btn" data-i18n="hero.button">Get Started</a>
         </div>
     </section>
 
@@ -51,29 +52,24 @@
             </div>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="assets/img/Perfil_Armestar_Heredia.jpeg" height="296" width="255"/>
+                    <img src="assets/img/Perfil_Armestar_Heredia.jpeg" height="296" width="255" alt="Armestar Heredia"/>
                     <h3>Armestar Heredia</h3>
-                    <p data-i18n="team.role1">-</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/img/Perfil_Emilia_Duran.jpeg" height="420" width="420"/>
+                    <img src="assets/img/Perfil_Emilia_Duran.jpeg" height="420" width="420" alt="Emilia Duran"/>
                     <h3>Emilia Duran</h3>
-                    <p data-i18n="team.role2">-</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/img/Perfil_Jorge_Taipe.png" height="333" width="265"/>
+                    <img src="assets/img/Perfil_Jorge_Taipe.png" height="333" width="265" alt="Jorge Taipe"/>
                     <h3>Jorge Taipe</h3>
-                    <p data-i18n="team.role3">-</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/img/Perfil_Saul_Ortega.JPEG" height="98" width="73"/>
+                    <img src="assets/img/Perfil_Saul_Ortega.JPEG" height="98" width="73" alt="Saul Ortega"/>
                     <h3>Saul Ortega</h3>
-                    <p data-i18n="team.role4">-</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/img/Perfil_Werner_Lang.jpg" height="278" width="255"/>
+                    <img src="assets/img/Perfil_Werner_Lang.jpg" height="278" width="255" alt="Werner Lang"/>
                     <h3>Werner Lang</h3>
-                    <p data-i18n="team.role5">-</p>
                 </div>
             </div>
         </div>
@@ -122,6 +118,19 @@
             </div>
         </div>
     </section>
+
+    <!-- Call to Action for Technicians -->
+    <section class="technician-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 data-i18n="cta.technicians.title">Are You a Technician?</h2>
+                    <p data-i18n="cta.technicians.subtitle">Join our network of professionals and grow your business with ChambaPro</p>
+                    <a href="technicians.html" class="btn btn-secondary" data-i18n="cta.technicians.button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- Footer -->
@@ -150,7 +159,9 @@
                 <h3 data-i18n="footer.contact">Contact</h3>
                 <ul class="footer-links">
                     <li><a href="#" data-i18n="footer.support">Support</a></li>
+                    <li><a href="#" data-i18n="footer.help">Help Center</a></li>
                     <li><a href="#" data-i18n="footer.faq">FAQs</a></li>
+                    <li><a href="#" data-i18n="footer.book">Book a Service</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -158,6 +169,7 @@
                 <ul class="footer-links">
                     <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
                     <li><a href="#" data-i18n="footer.termsUse">Terms of Use</a></li>
+                    <li><a href="#" data-i18n="footer.cookie">Cookie Policy</a></li>
                     <li><a href="#" data-i18n="footer.guarantee">Guarantee</a></li>
                 </ul>
             </div>

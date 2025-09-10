@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChambaPro - Beneficios para Técnicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header with solid background (fixed position) -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">ChambaPro</a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#about" data-i18n="nav.about">Nosotros</a></li>
+                    <li><a href="index.html#services" data-i18n="nav.services">Servicios</a></li>
+                    <li><a href="index.html#team" data-i18n="nav.team">Nuestro Equipo</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav.contact">Contacto</a></li>
+                    <li><a href="technicians.html" class="active" data-i18n="nav.technicians">Para Técnicos</a></li>
+                </ul>
+                <button id="languageToggle" class="language-toggle">
+                    <span class="language-flag">🇪🇸</span>
+                    <span class="language-text" data-i18n="language.spanish">ES</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Main content (scrolls normally) -->
+<main>
+    <!-- Hero Section for Technicians -->
+    <section class="hero technician-hero">
+        <div class="container">
+            <h1 data-i18n="technicians.hero.title">Únete a Nuestra Red de Técnicos Expertos</h1>
+            <p data-i18n="technicians.hero.subtitle">Maximiza tu potencial y haz crecer tu negocio con las mejores oportunidades del mercado</p>
+            <a href="#apply" class="btn" data-i18n="technicians.hero.button">Aplicar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="technician-benefits" class="technician-benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="technicians.benefits.title">Beneficios Exclusivos para Técnicos</h2>
+                <p data-i18n="technicians.benefits.subtitle">Descubre por qué más de 500 técnicos confían en nosotros</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card1.title">Más Trabajos</h3>
+                    <p data-i18n="technicians.benefits.card1.text">Accede a una cartera constante de clientes que necesitan tus servicios especializados.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card2.title">Mejores Ingresos</h3>
+                    <p data-i18n="technicians.benefits.card2.text">Tarifas competitivas y oportunidades de trabajos premium con mayor remuneración.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card3.title">Flexibilidad Horaria</h3>
+                    <p data-i18n="technicians.benefits.card3.text">Tú decides cuándo y cuánto trabajar. Controla tu agenda según tu disponibilidad.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card4.title">Protección y Seguridad</h3>
+                    <p data-i18n="technicians.benefits.card4.text">Trabaja con tranquilidad gracias a nuestro seguro de responsabilidad civil y verificación de clientes.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card5.title">Herramientas Digitales</h3>
+                    <p data-i18n="technicians.benefits.card5.text">Acceso a nuestra plataforma con gestión de citas, pagos automatizados y seguimiento de clientes.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-i18n="technicians.benefits.card6.title">Capacitación Continua</h3>
+                    <p data-i18n="technicians.benefits.card6.text">Programas de formación para mejorar tus habilidades y aprender nuevas técnicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="technicians.howitworks.title">¿Cómo Funciona?</h2>
+                <p data-i18n="technicians.howitworks.subtitle">Unete a nuestra plataforma en 4 sencillos pasos</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 data-i18n="technicians.howitworks.step1.title">Regístrate</h3>
+                    <p data-i18n="technicians.howitworks.step1.text">Completa tu perfil con tu experiencia y especialidades.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 data-i18n="technicians.howitworks.step2.title">Verificación</h3>
+                    <p data-i18n="technicians.howitworks.step2.text">Validamos tus credenciales y experiencia profesional.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 data-i18n="technicians.howitworks.step3.title">Recibe Oportunidades</h3>
+                    <p data-i18n="technicians.howitworks.step3.text">Accede a trabajos que coincidan con tus habilidades y disponibilidad.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 data-i18n="technicians.howitworks.step4.title">Trabaja y Cobra</h3>
+                    <p data-i18n="technicians.howitworks.step4.text">Realiza los servicios y recibe pagos seguros y puntuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="technicians.testimonials.title">Técnicos que Confían en Nosotros</h2>
+                <p data-i18n="technicians.testimonials.subtitle">Experiencias reales de profesionales de nuestra comunidad</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="technicians.testimonials.card1.text">"Desde que me uní a ChambaPro, mi ingreso mensual aumentó en un 40%. La plataforma es fácil de usar y los clientes son excelentes."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Rodríguez">
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p data-i18n="technicians.testimonials.card1.role">Electricista</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="technicians.testimonials.card2.text">"La flexibilidad de horarios me permite balancear mi trabajo y mi familia. Además, el soporte al técnico es excelente."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María González">
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p data-i18n="technicians.testimonials.card2.role">Plomera</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p data-i18n="technicians.testimonials.card3.text">"Las herramientas de gestión me ahorran horas de administración. Ahora me puedo concentrar en lo que mejor hago: reparar."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Javier López">
+                        <div class="author-info">
+                            <h4>Javier López</h4>
+                            <p data-i18n="technicians.testimonials.card3.role">Técnico en Refrigeración</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="apply-section">
+        <div class="container">
+            <div class="apply-content">
+                <div class="apply-text">
+                    <h2 data-i18n="technicians.apply.title">¿Listo para Unirte a Nuestra Comunidad?</h2>
+                    <p data-i18n="technicians.apply.subtitle">Comienza a recibir trabajos que se adapten a tus habilidades y disponibilidad.</p>
+                    <ul>
+                        <li data-i18n="technicians.apply.benefit1">Sin cuotas de membresía mensuales</li>
+                        <li data-i18n="technicians.apply.benefit2">Pagos garantizados y seguros</li>
+                        <li data-i18n="technicians.apply.benefit3">Soporte técnico dedicado</li>
+                    </ul>
+                </div>
+                <div class="apply-form">
+                    <h3 data-i18n="technicians.apply.formtitle">Solicita Información</h3>
+                    <form id="technicianForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required data-i18n-ph="technicians.form.name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required data-i18n-ph="technicians.form.email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono" required data-i18n-ph="technicians.form.phone">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected data-i18n="technicians.form.specialty">Selecciona tu especialidad</option>
+                                <option value="plumbing" data-i18n="technicians.form.plumbing">Plomería</option>
+                                <option value="electrical" data-i18n="technicians.form.electrical">Electricidad</option>
+                                <option value="carpentry" data-i18n="technicians.form.carpentry">Carpintería</option>
+                                <option value="painting" data-i18n="technicians.form.painting">Pintura</option>
+                                <option value="other" data-i18n="technicians.form.other">Otra</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn" data-i18n="technicians.form.submit">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 data-i18n="footer.about">Nosotros</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.story">Nuestra Historia</a></li>
+                    <li><a href="#" data-i18n="footer.howItWorks">Cómo Funciona</a></li>
+                    <li><a href="#" data-i18n="footer.team">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.services">Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.plumbing">Plomería</a></li>
+                    <li><a href="#" data-i18n="footer.electrical">Electricidad</a></li>
+                    <li><a href="#" data-i18n="footer.carpentry">Carpintería</a></li>
+                    <li><a href="#" data-i18n="footer.painting">Pintura</a></li>
+                    <li><a href="#" data-i18n="footer.repairs">Reparaciones Generales</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.contact">Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.support">Soporte</a></li>
+                    <li><a href="#" data-i18n="footer.help">Centro de Ayuda</a></li>
+                    <li><a href="#" data-i18n="footer.faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.terms">Términos de Servicio</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.privacy">Política de Privacidad</a></li>
+                    <li><a href="#" data-i18n="footer.termsUse">Términos de Uso</a></li>
+                    <li><a href="#" data-i18n="footer.guarantee">Garantía</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 ChambaPro. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
