@@ -88,11 +88,68 @@ const translations = {
 
         "about.team.title": "Meet Our Founding Team",
         "about.team.subtitle": "The passionate students who brought ChambaPro to life",
+        "about.team.ctaButton": "View Full Team",
 
         "about.cta.title": "Ready to Experience the ChambaPro Difference?",
         "about.cta.subtitle": "Join our growing community of satisfied homeowners and skilled technicians",
         "about.cta.button1": "Find a Technician",
         "about.cta.button2": "Become a Technician",
+
+        // Team page translations
+        "team.hero.title": "Meet Our Team",
+        "team.hero.subtitle": "The talented Software Engineering students behind ChambaPro",
+
+        "team.founders.title": "Founding Team",
+        "team.founders.subtitle": "The five students who brought ChambaPro to life",
+
+        // Founding team members descriptions
+        "team.member.werner.name": "Werner Lang Nassi",
+        "team.member.werner.role": "Software Engineering Student",
+        "team.member.werner.bio": "Student at Universidad Peruana de Ciencias Aplicadas (UPC), currently in 6th cycle. I'm a student who enjoys researching new things and exploring innovative solutions.",
+        "team.member.werner.skill1": "Researcher",
+        "team.member.werner.skill2": "Innovator",
+        "team.member.werner.skill3": "Analyst",
+        "team.member.werner.skill4": "Cooperative",
+
+        "team.member.jorge.name": "Jorge Taipe Sangama",
+        "team.member.jorge.role": "Software Engineering Student",
+        "team.member.jorge.bio": "I'm a student who enjoys innovating and working on personal projects. I like challenging tasks and working under pressure to deliver the best results.",
+        "team.member.jorge.skill1": "Perseverant",
+        "team.member.jorge.skill2": "Creative",
+        "team.member.jorge.skill3": "Leader",
+        "team.member.jorge.skill4": "Optimistic",
+
+        "team.member.saul.name": "Saul Ortega Muñoz",
+        "team.member.saul.role": "Software Engineering Student",
+        "team.member.saul.bio": "Software Engineering student in 5th cycle, responsible and proactive, with interest in developing technological solutions and strengthening my skills to contribute to each project.",
+        "team.member.saul.skill1": "Responsible",
+        "team.member.saul.skill2": "Loyal",
+        "team.member.saul.skill3": "Curious",
+
+        "team.member.matias.name": "Matias Armestar Heredia",
+        "team.member.matias.role": "Software Engineering Student",
+        "team.member.matias.bio": "Student at Universidad Peruana de Ciencias Aplicadas (UPC). I consider myself a student capable of making significant contributions to a team and working collaboratively.",
+        "team.member.matias.skill1": "Cooperative",
+        "team.member.matias.skill2": "Punctual",
+        "team.member.matias.skill3": "Team Player",
+
+        "team.member.emilia.name": "Emilia Duran Santander",
+        "team.member.emilia.role": "Software Engineering Student",
+        "team.member.emilia.bio": "Software Engineering student. I consider myself a responsible person with a desire to learn and grow professionally while contributing to meaningful projects.",
+        "team.member.emilia.skill1": "Responsible",
+        "team.member.emilia.skill2": "Perseverant",
+        "team.member.emilia.skill3": "Committed",
+
+        "team.values.title": "Our Team Values",
+        "team.values.subtitle": "The principles that guide our work at ChambaPro",
+        "team.values.innovation.title": "Innovation",
+        "team.values.innovation.text": "We constantly explore new technologies and approaches to create the best solutions for our users.",
+        "team.values.collaboration.title": "Collaboration",
+        "team.values.collaboration.text": "We believe in the power of teamwork and the synergy that comes from diverse perspectives working together.",
+        "team.values.learning.title": "Continuous Learning",
+        "team.values.learning.text": "As students, we embrace the opportunity to learn and grow with every challenge we encounter.",
+        "team.values.community.title": "Community Focus",
+        "team.values.community.text": "We're committed to creating solutions that genuinely help homeowners and technicians in our community.",
 
         // Technician page translations
         "technicians.hero.title": "Join Our Network of Expert Technicians",
@@ -228,7 +285,7 @@ const translations = {
         "about.values.trust.title": "Confianza",
         "about.values.trust.text": "Verificamos todos los técnicos mediante rigurosas verificaciones de antecedentes y credenciales para garantizar la tranquilidad de nuestros clientes.",
         "about.values.quality.title": "Calidad",
-        "about.values.quality.text": "Mantenemos altos estándares para todos los servicios proporcionados a través de nuestra plataforma, con la satisfacción del cliente como nuestra principal prioridad.",
+        "about.values.quality.text": "Mantenemos altos estándares para todos los servicios proporcionados a través de nuestra plataforma, with la satisfacción del cliente como nuestra principal prioridad.",
         "about.values.innovation.title": "Innovación",
         "about.values.innovation.text": "Mejoramos continuamente nuestra plataforma para que el proceso de encontrar y contratar profesionales de servicios para el hogar sea perfecto y eficiente.",
         "about.values.community.title": "Comunidad",
@@ -241,11 +298,68 @@ const translations = {
 
         "about.team.title": "Conoce Nuestro Equipo Fundador",
         "about.team.subtitle": "Los estudiantes apasionados que dieron vida a ChambaPro",
+        "about.team.ctaButton": "Ver Equipo Completo",
 
         "about.cta.title": "¿Listo para Experimentar la Diferencia ChambaPro?",
         "about.cta.subtitle": "Únete a nuestra creciente comunidad de propietarios satisfechos y técnicos calificados",
         "about.cta.button1": "Encontrar un Técnico",
         "about.cta.button2": "Convertirse en Técnico",
+
+        // Team page translations
+        "team.hero.title": "Conoce Nuestro Equipo",
+        "team.hero.subtitle": "Los talentosos estudiantes de Ingeniería de Software detrás de ChambaPro",
+
+        "team.founders.title": "Equipo Fundador",
+        "team.founders.subtitle": "Los cinco estudiantes que dieron vida a ChambaPro",
+
+        // Founding team members descriptions
+        "team.member.werner.name": "Werner Lang Nassi",
+        "team.member.werner.role": "Estudiante de Ingeniería de Software",
+        "team.member.werner.bio": "Estudiante de la Universidad Peruana de Ciencias Aplicadas (UPC), cursando en 6.º ciclo. Soy un estudiante que le gusta investigar cosas nuevas y explorar soluciones innovadoras.",
+        "team.member.werner.skill1": "Investigador",
+        "team.member.werner.skill2": "Innovador",
+        "team.member.werner.skill3": "Analista",
+        "team.member.werner.skill4": "Cooperativo",
+
+        "team.member.jorge.name": "Jorge Taipe Sangama",
+        "team.member.jorge.role": "Estudiante de Ingeniería de Software",
+        "team.member.jorge.bio": "Soy estudiante que le gusta innovar y hacer proyectos personales, me gustan las cosas desafiantes y trabajar bajo presión para entregar los mejores resultados.",
+        "team.member.jorge.skill1": "Perseverante",
+        "team.member.jorge.skill2": "Creativo",
+        "team.member.jorge.skill3": "Líder",
+        "team.member.jorge.skill4": "Optimista",
+
+        "team.member.saul.name": "Saul Ortega Muñoz",
+        "team.member.saul.role": "Estudiante de Ingeniería de Software",
+        "team.member.saul.bio": "Soy estudiante de Ingeniería de Software en 5.º ciclo, responsable y proactivo, con interés en el desarrollo de soluciones tecnológicas y en fortalecer mis habilidades para aportar en cada proyecto.",
+        "team.member.saul.skill1": "Responsable",
+        "team.member.saul.skill2": "Leal",
+        "team.member.saul.skill3": "Curioso",
+
+        "team.member.matias.name": "Matias Armestar Heredia",
+        "team.member.matias.role": "Estudiante de Ingeniería de Software",
+        "team.member.matias.bio": "Estudiante de la Universidad Peruana de Ciencias Aplicadas (UPC). Me considero un estudiante capaz de aportar significativamente a un equipo y trabajar de manera colaborativa.",
+        "team.member.matias.skill1": "Cooperativo",
+        "team.member.matias.skill2": "Puntual",
+        "team.member.matias.skill3": "Trabajo en Equipo",
+
+        "team.member.emilia.name": "Emilia Duran Santander",
+        "team.member.emilia.role": "Estudiante de Ingeniería de Software",
+        "team.member.emilia.bio": "Estudiante de la carrera de Ingeniería de Software. Me considero una persona responsable y con ánimos de aprender y crecer profesionalmente mientras contribuyo a proyectos significativos.",
+        "team.member.emilia.skill1": "Responsable",
+        "team.member.emilia.skill2": "Perseverante",
+        "team.member.emilia.skill3": "Comprometida",
+
+        "team.values.title": "Nuestros Valores de Equipo",
+        "team.values.subtitle": "Los principios que guían nuestro trabajo en ChambaPro",
+        "team.values.innovation.title": "Innovación",
+        "team.values.innovation.text": "Exploramos constantemente nuevas tecnologías y enfoques para crear las mejores soluciones para nuestros usuarios.",
+        "team.values.collaboration.title": "Colaboración",
+        "team.values.collaboration.text": "Creemos en el poder del trabajo en equipo y la sinergia que surge de diversas perspectivas trabajando juntas.",
+        "team.values.learning.title": "Aprendizaje Continuo",
+        "team.values.learning.text": "Como estudiantes, aprovechamos la oportunidad de aprender y crecer con cada desafío que encontramos.",
+        "team.values.community.title": "Enfoque Comunitario",
+        "team.values.community.text": "Estamos comprometidos a crear soluciones que genuinamente ayuden a propietarios y técnicos en nuestra comunidad.",
 
         // Technician page translations
         "technicians.hero.title": "Únete a Nuestra Red de Técnicos Expertos",
