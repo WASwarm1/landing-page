@@ -55,7 +55,7 @@ nav {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -332,7 +332,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: var(--text);
+    color: var(--primary);
 }
 
 .copyright {
