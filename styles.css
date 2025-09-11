@@ -714,6 +714,27 @@ footer {
     font-weight: 600;
 }
 
+/* Responsive Design for Contact Page */
+.contact-hero {
+    background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+    url('https://plus.unsplash.com/premium_photo-1661299251279-117a49a32548?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.contact-form textarea {
+  width: 100%;        /* ocupa todo el ancho disponible */
+  height: 150px;      /* alto fijo */
+  resize: none;       /* desactiva el redimensionado */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
 /* Responsive Design for Technician Page */
 @media (max-width: 968px) {
     .apply-content {
@@ -1239,6 +1260,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 /* Responsive Design for Terms Page */
 @media (max-width: 768px) {
