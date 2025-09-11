@@ -95,6 +95,12 @@ const translations = {
         "about.cta.button1": "Find a Technician",
         "about.cta.button2": "Become a Technician",
 
+        // Services page translations
+        "services.hero.title": "Our services",
+        "services.hero.subtitle": "Discover the different services offered by our technicians",
+        "services.info.title": "We adapt to you",
+        "services.info.text": "At ChambaPro, you can contact the technician your home needs. The platform lists professionals in various specialties, such as plumbing, electricity, painting, and more.",
+
         // Team page translations
         "team.hero.title": "Meet Our Team",
         "team.hero.subtitle": "The talented Software Engineering students behind ChambaPro",
@@ -359,6 +365,12 @@ const translations = {
         "about.cta.subtitle": "Únete a nuestra creciente comunidad de propietarios satisfechos y técnicos calificados",
         "about.cta.button1": "Encontrar un Técnico",
         "about.cta.button2": "Convertirse en Técnico",
+
+        // Services page translations
+        "services.hero.title": "Nuestros servicios",
+        "services.hero.subtitle": "Descubre los distintos servicios ofrecidos por nuestros técnicos",
+        "services.info.title": "Nos adecuamos a ti",
+        "services.info.text": "En ChambaPro, puedes contactar al técnico que le haga falta a tu hogar. En la plataforma se encuentran registrados profesionales de distintas especialidades como la plomería, electricidad, pintura y más.",
 
         // Team page translations
         "team.hero.title": "Conoce Nuestro Equipo",
