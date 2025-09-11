@@ -208,7 +208,62 @@ const translations = {
         "technicians.form.carpentry": "Carpentry",
         "technicians.form.painting": "Painting",
         "technicians.form.other": "Other",
-        "technicians.form.submit": "Submit Application"
+        "technicians.form.submit": "Submit Application",
+
+        // Terms of Service page translations
+
+        // Hero section
+        'terms.hero.title': 'Terms of Service',
+        'terms.hero.subtitle': 'Understanding our policies and your rights',
+
+        // Terms navigation
+        'terms.nav.privacy': 'Privacy Policy',
+        'terms.nav.terms': 'Terms of Use',
+        'terms.nav.guarantee': 'Guarantee',
+
+        // Common terms
+        'terms.lastUpdated': 'Last updated: January 2025',
+
+        // Privacy Policy
+        'terms.privacy.title': 'Privacy Policy',
+        'terms.privacy.subtitle1': '1. Information We Collect',
+        'terms.privacy.text1': 'We collect information you provide directly to us, including when you create an account, request services, or communicate with us. This may include your name, email address, phone number, payment information, and details about your home service needs.',
+        'terms.privacy.subtitle2': '2. How We Use Your Information',
+        'terms.privacy.text2': 'We use the information we collect to provide, maintain, and improve our services, process transactions, send you technical notices and updates, respond to your comments and questions, and provide customer support.',
+        'terms.privacy.subtitle3': '3. Information Sharing',
+        'terms.privacy.text3': 'We may share your information with technicians to facilitate the services you request. We do not sell your personal information to third parties. We may share information with service providers who assist us in operating our platform.',
+        'terms.privacy.subtitle4': '4. Data Security',
+        'terms.privacy.text4': 'We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.',
+        'terms.privacy.subtitle5': '5. Your Choices',
+        'terms.privacy.text5': 'You may update, correct, or delete your account information at any time by logging into your account. You can also contact us directly to exercise your privacy rights.',
+
+        // Terms of Use
+        'terms.terms.title': 'Terms of Use',
+        'terms.terms.subtitle1': '1. Acceptance of Terms',
+        'terms.terms.text1': 'By accessing or using ChambaPro\'s services, you agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, please do not use our services.',
+        'terms.terms.subtitle2': '2. User Accounts',
+        'terms.terms.text2': 'You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must be at least 18 years old to use our services.',
+        'terms.terms.subtitle3': '3. Service Booking and Payments',
+        'terms.terms.text3': 'When you book a service through ChambaPro, you agree to pay all charges associated with that service. Prices are subject to change, and we reserve the right to refuse or cancel any orders.',
+        'terms.terms.subtitle4': '4. User Conduct',
+        'terms.terms.text4': 'You agree not to use our services to harass technicians, post false information, or engage in any illegal activities. We reserve the right to terminate accounts that violate these terms.',
+        'terms.terms.subtitle5': '5. Modifications to Terms',
+        'terms.terms.text5': 'We may modify these Terms of Use at any time. We will provide notice of significant changes through our website or by email. Continued use of our services constitutes acceptance of the modified terms.',
+
+        // Guarantee
+        'terms.guarantee.title': 'Satisfaction Guarantee',
+        'terms.guarantee.subtitle1': '1. Our Promise',
+        'terms.guarantee.text1': 'ChambaPro is committed to your satisfaction. If you\'re not happy with a service provided through our platform, we\'ll work with you and the technician to make it right.',
+        'terms.guarantee.subtitle2': '2. Coverage',
+        'terms.guarantee.text2': 'Our guarantee covers workmanship issues for services booked through our platform. It applies for 30 days from the service completion date. The guarantee is limited to the cost of the original service.',
+        'terms.guarantee.subtitle3': '3. Making a Claim',
+        'terms.guarantee.text3': 'To make a claim under our satisfaction guarantee, contact our customer support team within 30 days of service completion. Provide details about the issue and any supporting photos or documentation.',
+        'terms.guarantee.subtitle4': '4. Resolution Process',
+        'terms.guarantee.text4': 'Once we receive your claim, we\'ll review it and contact the technician. We may arrange for a re-service, partial refund, or full refund depending on the circumstances. Our team will mediate between you and the technician to find a fair resolution.',
+        'terms.guarantee.subtitle5': '5. Exclusions',
+        'terms.guarantee.text5': 'The guarantee does not cover issues resulting from unauthorized repairs, pre-existing conditions, changes made after the service, or problems unrelated to the technician\'s work. Normal wear and tear is also excluded.',
+
+
     },
     es: {
         // Navigation
@@ -418,7 +473,61 @@ const translations = {
         "technicians.form.carpentry": "Carpintería",
         "technicians.form.painting": "Pintura",
         "technicians.form.other": "Otra",
-        "technicians.form.submit": "Enviar Solicitud"
+        "technicians.form.submit": "Enviar Solicitud",
+
+        // Terms of Service page translations
+
+        // Hero section
+        'terms.hero.title': 'Términos de Servicio',
+        'terms.hero.subtitle': 'Comprendiendo nuestras políticas y sus derechos',
+
+        // Terms navigation
+        'terms.nav.privacy': 'Política de Privacidad',
+        'terms.nav.terms': 'Términos de Uso',
+        'terms.nav.guarantee': 'Garantía',
+
+        // Common terms
+        'terms.lastUpdated': 'Última actualización: Enero 2025',
+
+        // Privacy Policy
+        'terms.privacy.title': 'Política de Privacidad',
+        'terms.privacy.subtitle1': '1. Información que Recopilamos',
+        'terms.privacy.text1': 'Recopilamos información que usted nos proporciona directamente, incluso cuando crea una cuenta, solicita servicios o se comunica con nosotros. Esto puede incluir su nombre, dirección de correo electrónico, número de teléfono, información de pago y detalles sobre sus necesidades de servicios para el hogar.',
+        'terms.privacy.subtitle2': '2. Cómo Utilizamos Su Información',
+        'terms.privacy.text2': 'Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones, enviarle avisos técnicos y actualizaciones, responder a sus comentarios y preguntas, y brindar soporte al cliente.',
+        'terms.privacy.subtitle3': '3. Compartición de Información',
+        'terms.privacy.text3': 'Podemos compartir su información con técnicos para facilitar los servicios que solicita. No vendemos su información personal a terceros. Podemos compartir información con proveedores de servicios que nos ayudan a operar nuestra plataforma.',
+        'terms.privacy.subtitle4': '4. Seguridad de Datos',
+        'terms.privacy.text4': 'Implementamos medidas de seguridad apropiadas para proteger su información personal contra el acceso no autorizado, alteración, divulgación o destrucción.',
+        'terms.privacy.subtitle5': '5. Sus Opciones',
+        'terms.privacy.text5': 'Puede actualizar, corregir o eliminar la información de su cuenta en cualquier momento iniciando sesión en su cuenta. También puede contactarnos directamente para ejercer sus derechos de privacidad.',
+
+        // Terms of Use
+        'terms.terms.title': 'Términos de Uso',
+        'terms.terms.subtitle1': '1. Aceptación de los Términos',
+        'terms.terms.text1': 'Al acceder o utilizar los servicios de ChambaPro, usted acepta estar sujeto a estos Términos de Uso y nuestra Política de Privacidad. Si no está de acuerdo con estos términos, por favor no utilice nuestros servicios.',
+        'terms.terms.subtitle2': '2. Cuentas de Usuario',
+        'terms.terms.text2': 'Usted es responsable de mantener la confidencialidad de las credenciales de su cuenta y de todas las actividades que ocurran bajo su cuenta. Debe tener al menos 18 años de edad para utilizar nuestros servicios.',
+        'terms.terms.subtitle3': '3. Reserva de Servicios y Pagos',
+        'terms.terms.text3': 'Cuando reserva un servicio a través de ChambaPro, acepta pagar todos los cargos asociados con ese servicio. Los precios están sujetos a cambios y nos reservamos el derecho de rechazar o cancelar cualquier pedido.',
+        'terms.terms.subtitle4': '4. Conducta del Usuario',
+        'terms.terms.text4': 'Usted acepta no utilizar nuestros servicios para acosar a técnicos, publicar información falsa o participar en actividades ilegales. Nos reservamos el derecho de terminar cuentas que violen estos términos.',
+        'terms.terms.subtitle5': '5. Modificaciones de los Términos',
+        'terms.terms.text5': 'Podemos modificar estos Términos de Uso en cualquier momento. Notificaremos los cambios significativos a través de nuestro sitio web o por correo electrónico. El uso continuado de nuestros servicios constituye la aceptación de los términos modificados.',
+
+        // Guarantee
+        'terms.guarantee.title': 'Garantía de Satisfacción',
+        'terms.guarantee.subtitle1': '1. Nuestra Promesa',
+        'terms.guarantee.text1': 'ChambaPro está comprometido con su satisfacción. Si no está satisfecho con un servicio proporcionado a través de nuestra plataforma, trabajaremos con usted y el técnico para solucionarlo.',
+        'terms.guarantee.subtitle2': '2. Cobertura',
+        'terms.guarantee.text2': 'Nuestra garantía cubre problemas de mano de obra para servicios reservados a través de nuestra plataforma. Se aplica durante 30 días a partir de la fecha de finalización del servicio. La garantía se limita al costo del servicio original.',
+        'terms.guarantee.subtitle3': '3. Hacer un Reclamo',
+        'terms.guarantee.text3': 'Para hacer un reclamo bajo nuestra garantía de satisfacción, contacte a nuestro equipo de soporte al cliente dentro de los 30 días posteriores a la finalización del servicio. Proporcione detalles sobre el problema y cualquier foto o documentación de apoyo.',
+        'terms.guarantee.subtitle4': '4. Proceso de Resolución',
+        'terms.guarantee.text4': 'Una vez que recibamos su reclamo, lo revisaremos y contactaremos al técnico. Podemos organizar un nuevo servicio, un reembolso parcial o un reembolso completo según las circunstancias. Nuestro equipo mediará entre usted y el técnico para encontrar una solución justa.',
+        'terms.guarantee.subtitle5': '5. Exclusiones',
+        'terms.guarantee.text5': 'La garantía no cubre problemas resultantes de reparaciones no autorizadas, condiciones preexistentes, cambios realizados después del servicio o problemas no relacionados con el trabajo del técnico. El desgaste normal también está excluido.',
+
     }
 };
 
