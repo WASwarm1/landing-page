@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChambaPro - Beneficios para Técnicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Header with solid background (fixed position) -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo">ChambaPro</a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                    <li><a href="team.html" data-i18n="nav.team">Our Team</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="technicians.html" data-i18n="nav.technicians">For Technicians</a></li>
+                </ul>
+                <button id="languageToggle" class="language-toggle">
+                    <span class="language-flag">🇺🇸</span>
+                    <span class="language-text" data-i18n="language.english">EN</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Main content (scrolls normally) -->
+<main>
+    <!-- Hero Section for Services -->
+    <section class="hero contact-hero">
+        <div class="container">
+            <h1 data-i18n="services.hero.title">Nuestros servicios</h1>
+            <p data-i18n="services.hero.subtitle">Descubre los distintos servicios ofrecidos por nuestros técnicos</p>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1645651964715-d200ce0939cc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Team meeting" style="width: 100%; border-radius: 10px;">
+                </div>
+                <div class="story-text">
+                    <h2 data-i18n="services.info.title">Nos adecuamos a ti</h2>
+                    <p data-i18n="services.info.text">
+                        En ChambaPro, puedes contactar al técnico que le haga falta a tu hogar.
+                        En la plataforma se encuentran registrados profesionales de distintas especialidades como la plomería, electricidad, pintura y más.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 data-i18n="footer.about">About Us</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html" data-i18n="footer.story">Our Story</a></li>
+                    <li><a href="team.html" data-i18n="footer.team">Team</a></li>
+                    <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.services">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.plumbing">Plumbing</a></li>
+                    <li><a href="#" data-i18n="footer.electrical">Electrical</a></li>
+                    <li><a href="#" data-i18n="footer.carpentry">Carpentry</a></li>
+                    <li><a href="#" data-i18n="footer.painting">Painting</a></li>
+                    <li><a href="#" data-i18n="footer.repairs">General Repairs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.contact">Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-i18n="footer.support">Support</a></li>
+                    <li><a href="#" data-i18n="footer.faq">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.terms">Terms of Service</h3>
+                <ul class="footer-links">
+                    <li><a href="terms.html#privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="terms.html#terms" data-i18n="footer.termsUse">Terms of Use</a></li>
+                    <li><a href="terms.html#guarantee" data-i18n="footer.guarantee">Guarantee</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 ChambaPro. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
