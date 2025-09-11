@@ -157,6 +157,17 @@ const translations = {
         "team.values.community.title": "Community Focus",
         "team.values.community.text": "We're committed to creating solutions that genuinely help homeowners and technicians in our community.",
 
+        // Contact page translations
+        "contact.hero.title": "Contact us",
+        "contact.hero.subtitle": "We are here to answer your questions and help you with our services.",
+        "contact.information.title": "Contact information",
+        "contact.message.title": "Send us a message",
+        "contact.message.name": "Full name",
+        "contact.message.email": "Email address",
+        "contact.message.phone": "Phone number",
+        "contact.message.text": "Type your message here...",
+        "contact.message.button": "Send message",
+
         // Technician page translations
         "technicians.hero.title": "Join Our Network of Expert Technicians",
         "technicians.hero.subtitle": "Maximize your potential and grow your business with the best market opportunities",
@@ -427,6 +438,17 @@ const translations = {
         "team.values.learning.text": "Como estudiantes, aprovechamos la oportunidad de aprender y crecer con cada desafío que encontramos.",
         "team.values.community.title": "Enfoque Comunitario",
         "team.values.community.text": "Estamos comprometidos a crear soluciones que genuinamente ayuden a propietarios y técnicos en nuestra comunidad.",
+
+        // Contact page translations
+        "contact.hero.title": "Contáctanos",
+        "contact.hero.subtitle": "Estamos aquí para resolver tus dudas y ayudarte con nuestros servicios",
+        "contact.information.title": "Información de contacto",
+        "contact.message.title": "Envíanos un Mensaje",
+        "contact.message.name": "Nombre completo",
+        "contact.message.email": "Correo eléctronico",
+        "contact.message.phone": "Teléfono",
+        "contact.message.text": "Escribe tu mensaje aquí...",
+        "contact.message.button": "Enviar Mensaje",
 
         // Technician page translations
         "technicians.hero.title": "Únete a Nuestra Red de Técnicos Expertos",
