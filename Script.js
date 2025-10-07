@@ -565,10 +565,8 @@ const translations = {
     }
 };
 
-// Set initial language
 let currentLanguage = 'en';
 
-// Function to change language
 function changeLanguage(lang) {
     currentLanguage = lang;
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -578,10 +576,8 @@ function changeLanguage(lang) {
         }
     });
 
-    // Update form placeholders
     translateFormPlaceholders();
 
-    // Update language toggle button
     const languageToggle = document.getElementById('languageToggle');
     const languageFlag = languageToggle.querySelector('.language-flag');
     const languageText = languageToggle.querySelector('.language-text');
@@ -596,11 +592,9 @@ function changeLanguage(lang) {
         languageText.textContent = 'ES';
     }
 
-    // Update html lang attribute
     document.documentElement.lang = lang;
 }
 
-// Add form placeholder translation function
 function translateFormPlaceholders() {
     document.querySelectorAll('[data-i18n-ph]').forEach(element => {
         const key = element.getAttribute('data-i18n-ph');
@@ -609,7 +603,6 @@ function translateFormPlaceholders() {
         }
     });
 
-    // Translate select options
     const specialtySelect = document.querySelector('select');
     if (specialtySelect) {
         const options = specialtySelect.querySelectorAll('option');
@@ -622,7 +615,6 @@ function translateFormPlaceholders() {
             }
         });
 
-        // Update the default option text
         const defaultOption = specialtySelect.querySelector('option[disabled]');
         if (defaultOption && defaultOption.hasAttribute('data-i18n')) {
             const key = defaultOption.getAttribute('data-i18n');
@@ -633,16 +625,13 @@ function translateFormPlaceholders() {
     }
 }
 
-// Language toggle functionality
 document.getElementById('languageToggle').addEventListener('click', () => {
     const newLanguage = currentLanguage === 'en' ? 'es' : 'en';
     changeLanguage(newLanguage);
 
-    // Save language preference to localStorage
     localStorage.setItem('chambapro-language', newLanguage);
 });
 
-// Mobile menu toggle functionality
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -652,7 +641,6 @@ if (menuToggle && navLinks) {
     });
 }
 
-// Close menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         if (navLinks) {
@@ -661,7 +649,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -683,7 +670,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add animation when elements come into view
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -698,7 +684,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Add counter animation for stats
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
     const speed = 200;
@@ -715,24 +700,19 @@ function animateCounters() {
     });
 }
 
-// Form submission handler
 document.addEventListener('DOMContentLoaded', function() {
-    // Check for saved language preference
     const savedLanguage = localStorage.getItem('chambapro-language');
     if (savedLanguage) {
         changeLanguage(savedLanguage);
     }
 
-    // Observe elements for animation
     const elementsToAnimate = document.querySelectorAll('.team-member, .benefit-card, .mission-content, .step, .testimonial-card, .value-card');
     elementsToAnimate.forEach(el => {
         observer.observe(el);
     });
 
-    // Translate form placeholders on page load
     translateFormPlaceholders();
 
-    // Handle technician form submission
     const technicianForm = document.getElementById('technicianForm');
     if (technicianForm) {
         technicianForm.addEventListener('submit', function(e) {
@@ -744,7 +724,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Set active navigation link based on current page
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -761,12 +740,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Animate counters if on about page
     if (document.querySelector('.stats-section')) {
         setTimeout(animateCounters, 500);
     }
 
-    // Initialize terms tabs if on terms page
     if (document.querySelector('.terms-tabs')) {
         initTermsTabs();
     }
@@ -789,15 +766,12 @@ function initTermsTabs() {
             window.location.hash = activeTab.getAttribute('href');
         }
 
-        // Activate tab and section based on hash
         function activateTab(tab) {
             tabs.forEach(t => t.classList.remove('active'));
             sections.forEach(s => s.classList.remove('active'));
 
-            // Add active class to clicked tab
             tab.classList.add('active');
 
-            // Show corresponding section
             const targetId = tab.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             if (targetSection) {

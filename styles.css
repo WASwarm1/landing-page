@@ -6,12 +6,12 @@
 }
 
 :root {
-    --primary: #20B2AA;    /* Azul Turquesa */
-    --secondary: #D9D9D9;  /* Gris Claro (botones) */
-    --light: #f5f5f5;      /* Gris Claro (fondos) */
-    --white: #ffffff;      /* Blanco */
-    --dark: #2e2e2e;       /* Gris Oscuro */
-    --text: #2e2e2e;       /* Texto principal */
+    --primary: #20B2AA;
+    --secondary: #D9D9D9;
+    --light: #f5f5f5;
+    --white: #ffffff;
+    --dark: #2e2e2e;
+    --text: #2e2e2e;
 }
 
 body {
@@ -27,7 +27,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header with solid background - STICKY */
 header {
     background-color: var(--white);
     color: var(--dark);
@@ -110,7 +109,6 @@ nav {
     font-weight: 500;
 }
 
-/* Hero Section with image background */
 .hero {
     background: linear-gradient(rgba(46, 46, 46, 0.7), rgba(46, 46, 46, 0.7)),
     url('https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
@@ -166,7 +164,6 @@ nav {
     box-shadow: 0 5px 15px rgba(217, 217, 217, 0.3);
 }
 
-/* Section Styling */
 section {
     padding: 80px 0;
 }
@@ -195,7 +192,6 @@ section {
     background-color: var(--primary);
 }
 
-/* Team Section */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -233,7 +229,6 @@ section {
     color: #666;
 }
 
-/* Mission Section */
 .mission {
     background-color: var(--light);
 }
@@ -250,7 +245,6 @@ section {
     color: var(--dark);
 }
 
-/* Benefits Section */
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -285,7 +279,6 @@ section {
     color: #666;
 }
 
-/* Technician CTA Section */
 .technician-cta {
     padding: 80px 0;
     background-color: var(--light);
@@ -316,7 +309,6 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 footer {
     background-color: var(--dark);
     color: var(--white);
@@ -374,7 +366,6 @@ footer {
     color: #ccc;
 }
 
-/* Mobile Navigation */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -384,7 +375,6 @@ footer {
     cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
         padding: 10px 0;
@@ -457,7 +447,6 @@ footer {
     }
 }
 
-/* Technician-specific styles */
 .technician-hero {
     background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
 }
@@ -505,7 +494,6 @@ footer {
     line-height: 1.6;
 }
 
-/* How It Works Section */
 .how-it-works {
     background-color: var(--light);
     padding: 80px 0;
@@ -550,7 +538,7 @@ footer {
     color: #666;
 }
 
-/* Testimonials Section */
+
 .testimonials {
     padding: 80px 0;
     background-color: var(--white);
@@ -617,7 +605,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Apply Section */
 .apply-section {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--primary) 0%, #1a9c96 100%);
@@ -708,22 +695,20 @@ footer {
     margin-top: 10px;
 }
 
-/* Active navigation link */
 .nav-links a.active {
     color: var(--primary);
     font-weight: 600;
 }
 
-/* Responsive Design for Contact Page */
 .contact-hero {
     background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
     url('https://plus.unsplash.com/premium_photo-1661299251279-117a49a32548?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .contact-form textarea {
-  width: 100%;        /* ocupa todo el ancho disponible */
-  height: 150px;      /* alto fijo */
-  resize: none;       /* desactiva el redimensionado */
+  width: 100%;
+  height: 150px;
+  resize: none;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -735,7 +720,6 @@ footer {
     background-color: var(--light);
 }
 
-/* Responsive Design for Technician Page */
 @media (max-width: 968px) {
     .apply-content {
         grid-template-columns: 1fr;
@@ -771,7 +755,6 @@ footer {
     }
 }
 
-/* About Page Specific Styles */
 .about-hero {
     background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
     url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
@@ -914,7 +897,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Responsive Design for About Page */
 @media (max-width: 968px) {
     .story-content {
         grid-template-columns: 1fr;
@@ -962,7 +944,6 @@ footer {
     }
 }
 
-/* Team Page Specific Styles */
 .team-hero {
     background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
     url('https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
@@ -1128,7 +1109,6 @@ footer {
     text-align: center;
 }
 
-/* Responsive Design for Team Page */
 @media (max-width: 968px) {
     .university-content {
         grid-template-columns: 1fr;
@@ -1157,7 +1137,6 @@ footer {
     }
 }
 
-/* Terms Page Specific Styles */
 .terms-hero {
     background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
     url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
@@ -1263,7 +1242,6 @@ footer {
 
 
 
-/* Responsive Design for Terms Page */
 @media (max-width: 768px) {
     .terms-tabs {
         flex-direction: column;
